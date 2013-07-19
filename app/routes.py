@@ -1,5 +1,5 @@
 #!flask/bin/python
-from flask import Flask, render_template, session, redirect, url_for, escape, request
+from flask import Flask, render_template, session, redirect, url_for, escape, request, abort
 app = Flask(__name__)
 
 import redis
@@ -36,7 +36,7 @@ def user_is_logged():
 @app.route('/')
 def index():
 	if user_is_logged():
-		return redirect(url_for('home'))
+		return redirect(url_for("home"))
 	return render_template('home_not_logged.html', header='home', logged=False)
 
 
@@ -111,7 +111,7 @@ def post(user, name):
 	return redirect(url_for('%s' % name))
 
 
-@app.route('/signup')
+
 @app.route('/login', methods=['POST', 'GET'])
 def login():
 	if request.method == 'POST':
@@ -139,18 +139,23 @@ def logout():
 	return redirect('/')
 
 
-@app.route('/signup', methods=['POST'])
+@app.route('/signup', methods=['POST', 'GET'])
 def sign_up():
-	if 'name' in request.form and 'password' in request.form:
-		name = request.form['name']
-		if name not in reserved_usernames.split():
-			password = request.form['password']
-			user = User.create(name, password)
-			if user:
-				session['id'] = user.id
-				return redirect(url_for('home'))
-			return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=True, logged=False)
-
+	if request.method == 'POST':	
+		if 'name' in request.form and 'password' in request.form:
+			name = request.form['name']
+			if name not in reserved_usernames.split():
+				password = request.form['password']
+				user = User.create(name, password)
+				if user:
+					session['id'] = user.id
+					return redirect(url_for('home'))
+				return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=True, logged=False)
+	
+	else:
+		if user_is_logged():
+                        return redirect(url_for('home'))
+                return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=False, logged=False)
 
 @app.route('/static/:filename')
 def static_file(filename):

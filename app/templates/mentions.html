@@ -11,7 +11,9 @@
 		<form method="POST" action="/post" class="update">
 			<textarea name="content"></textarea>
 			<fieldset>
+			{% if posts %}
 				<p>{{posts[0].content}}</p>
+			{% endif %}
 				<input type="submit" value="update!" />
 			</fieldset>
 		</form>

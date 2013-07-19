@@ -2,17 +2,65 @@
 	<head>
 
 		<title>Tweeter</title>
-	
+		<link rel="stylesheet" href="/static/retwis-py.css" type="text/css" media="screen" />	
 	</head>
 
-	<body>
+	<body class="{{header}}">
 
-		<div> {% block header %}{% endblock %} </div>
+		<div id="container">
+		
+		{% block header %}
+
+			<div id="header"><a href="/"><img src="/static/retwis.png"></a>
+				{% if logged %}
+					<div id="nav"><a href="/">Home</a> <a href="/logout">Sign out</a></div>
+				{% else %}
+					<div id="nav"><a href="/">Home</a> <a href="/login">Sign in</a> <a href="/login">Sign up</a></div>
+				{% endif %}
+			</div>
+		{% endblock %}
+		
+		{% block form %}
+			<h1>What's happening?</h1>
+			<form method="POST" action="/post" class="update">
+				<textarea name="content"></textarea>
+				<fieldset>
+					{% if tweet %}
+						<p>{{tweet.content}}</p>
+					{% else %}
+						<p>really ? nothing's happening ?</p>
+					{% endif %}
+					<input type="submit" value="update!" />
+					</fieldset>
+			</form>
+		{% endblock %}
+
 
 		{% block content %}{% endblock %}
 		
-		<div> {% block footer %}{% endblock %} </div>
+		
+		{% block side %}
+			<div id="side">
+				<p class="bio">
+					<img src="/static/avatar-small.png" />{{username}}
+					<span><a href="/{{username}}">{{counts[2]}} tweets</a></span>
+				</p>
+			<div>
+				<ul class="follow">
+					<li><a href="#">Following<span>{{counts[0]}}</span></a></li>
+					<li><a href="#">Followers<span>{{counts[1]}}</span></a></li>
+					<li><a href="/mentions">@{{username}}</a></li>
+				</ul>
+			</div>	
+		{% endblock %}
+		
 
+		 
+		{% block footer %}
+			<script src="/static/app.js" type="text/javascript" charset="utf-8"></script>
+		{% endblock %} 
+		
+		</div>
 	</body>
 
 </html>

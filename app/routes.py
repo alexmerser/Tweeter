@@ -1,14 +1,16 @@
+#!flask/bin/python
 from flask import Flask, render_template, session, redirect, url_for, escape, request
 app = Flask(__name__)
 
-from app import models
 import redis
 import settings
 
 settings.r = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
+from models import User,Post,Timeline
 
 reserved_usernames = 'follow mentions home signup login logout post'
 
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
 def authenticate(handler):
 	def _check_auth(*args, **kwargs):
@@ -35,7 +37,7 @@ def user_is_logged():
 def index():
 	if user_is_logged():
 		return redirect(url_for('home'))
-	return render_template('home_not_logged.html', logged=False)
+	return render_template('home_not_logged.html', header='home', logged=False)
 
 
 @app.route('/home')
@@ -46,14 +48,14 @@ def home(user):
 		last_tweet = user.posts()[0]
 	else:
 		last_tweet = None
-	return render_template('timeline.html', timeline=user.timeline(), page='timeline.html', username=user.username, counts=counts, last_tweet=last_tweet, logged=True)
+	return render_template('timeline.html', header='page', timeline=user.timeline(), page='timeline.html', username=user.username, counts=counts, last_tweet=last_tweet, logged=True)
 
 
 @app.route('/mentions')
 @authenticate
 def mentions(user):
 	counts = user.followees_count, user.followers_count, user.tweet_count
-	return render_template('mentions.html', mentions=user.mentions(), page='mentions.html', username=user.username, counts=counts, posts=user.posts()[:1],logged=True)
+	return render_template('mentions.html', header='page', mentions=user.mentions(), page='mentions.html', username=user.username, counts=counts, posts=user.posts()[:1],logged=True)
 
 
 @app.route('/:name')
@@ -67,41 +69,40 @@ def user_page(name):
 		if logged_user:
 			is_following = logged_user.following(user)
 
-		return render_template('user.html', posts=user.posts(), counts=counts, page='user.html', username=user.username, logged=is_logged, is_following=is_following, himself=himself)
+		return render_template('user.html', header='page', posts=user.posts(), counts=counts, page='user.html', username=user.username, logged=is_logged, is_following=is_following, himself=himself)
 
 	else:
 		abort(404)
 
 
 @app.route('/:name/statuses/:id')
-@app.validate(id=int)
 def status(name, id):
 	post = Post.find_by_id(id)
 	if post:
 		if post.user.username == name:
-			return render_template('single.html', username=post.user.username, tweet=post, page='single.html', logged=user_is_logged())
+			return render_template('single.html', header='page', username=post.user.username, tweet=post, page='single.html', logged=user_is_logged())
 
 	abort(404)
 
 
-@app.route('/post', method='POST')
+@app.route('/post', methods=['POST'])
 @authenticate
-def post(user)
-	content = request.POST['content']
+def post(user):
+	content = request.form['content']
 	Post.create(user, content)
 	return redirect(url_for('home'))
 
 
-@app.route('/follow/:name', method='POST')
+@app.route('/follow/:name', methods=['POST'])
 @authenticate
 def post(user, name):
 	user_to_follow = User.find_by_username(name)
-	if(user_to_follow:
+	if(user_to_follow):
 		user.follow(user_to_follow)
 	return redirect(url_for('%s' % name))
 
 
-@app.route('/unfollow/:name', method='POST')
+@app.route('/unfollow/:name', methods=['POST'])
 @authenticate
 def post(user, name):
 	user_to_unfollow = User.find_by_username(name)
@@ -111,25 +112,25 @@ def post(user, name):
 
 
 @app.route('/signup')
-@app.route('/login')
+@app.route('/login', methods=['POST', 'GET'])
 def login():
-	if user_is_logged():
-		return redirect(url_for('home'))
-	return render_template('login.html', page='login.html', error_login=False, error_signup=False, logged=False)
+	if request.method == 'POST':
+                if 'name' in request.form and 'password' in request.form:
+                        name = request.form['name']
+                        password = request.form['password']
 
-###### Changed session stuff
-@app.route('/login', method='POST')
-def login():
-	if 'name' in request.form and 'password' in request.form:
-		name = request.form['name']
-		password = request.form['password']
+                        user = User.find_by_username(name)
+                        if user and user.password == settings.SALT + password:
+                                session['id'] = user.id
+                                return redirect(url_for('home'))
 
-		user = User.find_by_username(name)
-		if user and user.password == settings.SALT + password:
-			session['id'] = user.id
+                return render_template('login.html', header='page', page='login.html', error_login=True, error_signup=False, logged=False)
+	else:
+		if user_is_logged():
 			return redirect(url_for('home'))
+		return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=False, logged=False)
 
-	return render_template('login.html', page='login.html', error_login=True, error_signup=False, logged=False)
+
 
 
 @app.route('/logout')
@@ -138,8 +139,8 @@ def logout():
 	return redirect('/')
 
 
-@app.route('/signup', method='POST'):
-	def sign_up():
+@app.route('/signup', methods=['POST'])
+def sign_up():
 	if 'name' in request.form and 'password' in request.form:
 		name = request.form['name']
 		if name not in reserved_usernames.split():
@@ -148,7 +149,7 @@ def logout():
 			if user:
 				session['id'] = user.id
 				return redirect(url_for('home'))
-			return render_template('login.html', page='login.html', error_login=False, error_signup=True, logged=False)
+			return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=True, logged=False)
 
 
 @app.route('/static/:filename')

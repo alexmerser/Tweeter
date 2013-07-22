@@ -2,22 +2,55 @@
 	<head>
 
 		<title>Tweeter</title>
-		<link rel="stylesheet" href="/static/retwis-py.css" type="text/css" media="screen" />	
+	<!--	<link rel="stylesheet" href="/static/retwis-py.css" type="text/css" media="screen" /> -->
+		<link rel="stylesheet" href="/static/css/bootstrap.css">
+		<style>
+      		body {
+        		padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      		}
+    		</style>
+		<link rel="stylesheet" href="/static/css/bootstrap-responsive.css">	
+
+		<!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
 	</head>
 
 	<body class="{{header}}">
 
-		<div id="container">
+		
 		
 		{% block header %}
+			<div class="navbar navbar-inverse navbar-fixed-top">
+      				<div class="navbar-inner">
+        				<div class="container">
+          					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+           	 				<span class="icon-bar"></span>
+            					<span class="icon-bar"></span>
+            					<span class="icon-bar"></span>
+          					</button>
+          					<a class="brand" href="/">Tweeter</a>
+          					<div class="nav-collapse collapse">
+            						<ul class="nav">
+              						<li class="active"><a href="/">Home</a></li>
+							{% if logged %}
+              							<li><a href="/logout">Sign Out</a></li>
+							{% else %}
+              							<li><a href="/login">Sign in</a></li>
+								<li><a href="/login">Sign up</a></li>
+							{% endif %}
+           	 					</ul>
+          					</div><!--/.nav-collapse -->
+        				</div>
+      				</div>
+    			</div>
 
-			<div id="header"><a href="/"><img src="/static/retwis.png"></a>
-				{% if logged %}
-					<div id="nav"><a href="/">Home</a> <a href="/logout">Sign out</a></div>
-				{% else %}
-					<div id="nav"><a href="/">Home</a> <a href="/login">Sign in</a> <a href="/login">Sign up</a></div>
-				{% endif %}
-			</div>
+		<div class="container">
+
 		{% endblock %}
 		
 		{% block form %}
@@ -57,10 +90,24 @@
 
 		 
 		{% block footer %}
+			</div>
 			<script src="/static/app.js" type="text/javascript" charset="utf-8"></script>
 		{% endblock %} 
 		
-		</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/bootstrap-transition.js"></script>
+    <script src="/static/js/bootstrap-alert.js"></script>
+    <script src="/static/js/bootstrap-modal.js"></script>
+    <script src="/static/js/bootstrap-dropdown.js"></script>
+    <script src="/static/js/bootstrap-scrollspy.js"></script>
+    <script src="/static/js/bootstrap-tab.js"></script>
+    <script src="/static/js/bootstrap-tooltip.js"></script>
+    <script src="/static/js/bootstrap-popover.js"></script>
+    <script src="/static/js/bootstrap-button.js"></script>
+    <script src="/static/js/bootstrap-collapse.js"></script>
+    <script src="/static/js/bootstrap-carousel.js"></script>
+    <script src="/static/js/bootstrap-typeahead.js"></script>
 	</body>
 
 </html>

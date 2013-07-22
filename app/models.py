@@ -111,7 +111,7 @@ class User(Model):
 			user.add_follower(self)
 
 	def stop_following(self, user):
-		r.srem("user:id:%s:followeed" % self.id, user.id)
+		r.srem("user:id:%s:followees" % self.id, user.id)
 		user.remove_follower(self)
 
 	def following(self, user):

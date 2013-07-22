@@ -1,5 +1,6 @@
 #!flask/bin/python
 from flask import Flask, render_template, session, redirect, url_for, escape, request, abort
+import functools
 app = Flask(__name__)
 
 import redis
@@ -13,6 +14,7 @@ reserved_usernames = 'follow mentions home signup login logout post'
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
 def authenticate(handler):
+	@functools.wraps(handler)
 	def _check_auth(*args, **kwargs):
 		if not session.new:
 			user = User.find_by_id(session['id'])
@@ -58,7 +60,7 @@ def mentions(user):
 	return render_template('mentions.html', header='page', mentions=user.mentions(), page='mentions.html', username=user.username, counts=counts, posts=user.posts()[:1],logged=True)
 
 
-@app.route('/<name>')
+@app.route('/<name>', methods=['GET', 'POST'])
 def user_page(name):
 	is_following, is_logged = False, user_is_logged()
 	user = User.find_by_username(name)
@@ -95,22 +97,20 @@ def post(user):
 	Post.create(user, content)
 	return redirect('/home')
 
-
-@app.route('/follow/<name>', methods=['POST'])
+@app.route('/follow/<name>', methods=['POST', 'GET'])
 @authenticate
 def follow(user, name):
 	user_to_follow = User.find_by_username(name)
-	if(user_to_follow):
+	if user_to_follow:
 		user.follow(user_to_follow)
 	return redirect('/%s' % name)
 
-
-@app.route('/unfollow/<name>', methods=['POST'])
+@app.route('/unfollow/<name>', methods=['POST', 'GET'])
 @authenticate
 def unfollow(user, name):
 	user_to_unfollow = User.find_by_username(name)
 	if user_to_unfollow:
-		user.stop_following(user_to_follow)
+		user.stop_following(user_to_unfollow)
 	return redirect('/%s' % name)
 
 

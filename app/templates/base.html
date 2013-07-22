@@ -11,6 +11,40 @@
     		</style>
 		<link rel="stylesheet" href="/static/css/bootstrap-responsive.css">	
 
+		<style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+    </style>
+
 		<!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
@@ -54,18 +88,12 @@
 		{% endblock %}
 		
 		{% block form %}
-			<h1>What's happening?</h1>
-			<form method="POST" action="/post" class="update">
-				<textarea name="content"></textarea>
-				<fieldset>
-					{% if tweet %}
-						<p>{{tweet.content}}</p>
-					{% else %}
-						<p>really ? nothing's happening ?</p>
-					{% endif %}
-					<input type="submit" value="update!" />
-					</fieldset>
-			</form>
+			<div class="well well-large">
+				<form method="POST" action="/post" class="update">
+					<textarea class="input-block-level" name="content" placeholder="What's happening?" rows="5"></textarea>
+						<input type="submit" class="btn btn-info"  value="Tweet!">
+				</form>
+			</div>
 		{% endblock %}
 
 
@@ -73,6 +101,7 @@
 		
 		
 		{% block side %}
+		<div class="span4 well">
 			<div id="side">
 				<p class="bio">
 					<img src="/static/avatar-small.png" />{{username}}
@@ -80,11 +109,14 @@
 				</p>
 			<div>
 				<ul class="follow">
-					<li><a href="#">Following<span>{{counts[0]}}</span></a></li>
-					<li><a href="#">Followers<span>{{counts[1]}}</span></a></li>
+					<li><a href="#">Following: <span>{{counts[0]}}</span></a></li>
+					<li><a href="#">Followers: <span>{{counts[1]}}</span></a></li>
 					<li><a href="/mentions">@{{username}}</a></li>
 				</ul>
-			</div>	
+			</div>
+		</div> <!-- span 4 -->	
+		</div> <!-- span 12 -->
+		</div> <!-- fluid rows -->
 		{% endblock %}
 		
 

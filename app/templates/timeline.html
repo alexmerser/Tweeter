@@ -9,11 +9,21 @@
 {% endblock %}
 
 {% block content %}
+	<div class="row-fluid"> <!-- contains timeline and side -->
+	<div class="span12">
+		<div class="span8">	
 		<div class="tweets">
 	{% for tweet in timeline %}
-<p><img src="/static/avatar.png" /> <strong><a href="/{{tweet.user.username}}">{{tweet.user.username}}</a></strong> {{tweet.content}}<span><a href="/{{tweet.user.username}}/statuses/{{tweet.id}}">permalink</a></span></p>
+	<div class="row-fluid">
+		<div class="well">
+			<p><img src="/static/avatar.png" /> <strong><a href="/{{tweet.user.username}}">{{tweet.user.username}}</a></strong>
+			 <div class="span6 offset2"> {{tweet.content}}</div>
+			<span><a href="/{{tweet.user.username}}/statuses/{{tweet.id}}"><h6>permalink</h6></a></span>
+		</p></div> <!-- well -->
+	</div>
 	{% endfor %}
-</div>
+	</div> <!-- tweets -->
+	</div> <!-- span 8 -->
 
 {% endblock %}
 

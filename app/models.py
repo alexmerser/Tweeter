@@ -75,7 +75,7 @@ class User(Model):
 		_from, _to = (page-1)*10, page*10
 		posts = r.lrange("user:id:%s:posts" % self.id, _from, _to)
 		if posts:
-			return [Post(int(post_id)) for post_id in timeline]
+			return [Post(int(post_id)) for post_id in posts]
 		return []
 
 	def timeline(self, page = 1):

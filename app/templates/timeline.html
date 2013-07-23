@@ -16,10 +16,24 @@
 	{% for tweet in timeline %}
 	<div class="row-fluid">
 		<div class="well">
+			
 			<p><img src="/static/avatar.png" /> <strong><a href="/{{tweet.user.username}}">{{tweet.user.username}}</a></strong>
-			 <div class="span6 offset2"> {{tweet.content}}</div>
-			<span><a href="/{{tweet.user.username}}/statuses/{{tweet.id}}"><h6>permalink</h6></a></span>
-		</p></div> <!-- well -->
+			 <div class="well"> {{tweet.content}}</div>
+			
+			 <div class="container">
+			 
+			<form method="POST" action="/delete/{{tweet.id}}" class="delete">
+			<input type="submit" class="btn btn-danger"  value="Delete">
+			</form>
+			
+			<!-- <form method="GET" action="/{{tweet.user.username}}/statuses/{{tweet.id}}">
+			<input type="submit" class="btn"  value="Permalink">
+			</form>  -->
+			
+			</div>
+			
+
+		</div> <!-- well -->
 	</div>
 	{% endfor %}
 	</div> <!-- tweets -->

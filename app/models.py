@@ -97,11 +97,22 @@ class User(Model):
 		r.lpush("user:id:%s:timeline" % self.id, post.id)
 		r.sadd('posts:id', post.id)
 
+	def remove_post(self, post):
+		r.lrem("user:id:%s:posts" % self.id, post.id)
+		r.lrem("user:id:%s:timeline" % self.id, post.id)
+		r.srem('posts:id', post.id)
+
 	def add_timeline_post(self, post):
 		r.lpush("user:id:%s:timeline" % self.id, post.id)
 
+	def remove_timeline_post(self, post):
+		r.lrem("user:id:%s:timeline" % self.id, post.id)
+
 	def add_mention(self, post):
 		r.lpush("user:id:%s:mention" % self.id, post.id)
+
+	def remove_mention(self, post):
+		r.lrem("user:id:%s:mention" % self.id, post.id)
 
 	def follow(self, user):
 		if user == self:
@@ -177,6 +188,26 @@ class Post(Model):
 			u = User.find_by_username(mention[1:]) # splice out first character '@'
 			if u:
 				u.add_mention(post)
+
+
+	@staticmethod
+	def delete(user, id):
+		post = Post.find_by_id(id)
+		
+		# remove post for user
+		user.remove_post(post)
+		r.lrem("timeline", id)
+
+		# remove post to timeline of all followers
+		for follower in user.followers:
+			follower.remove_timeline_post(post)
+
+		# search for user mentions in content and remove from Redis
+		mentions = re.findall('@\w+', post.content) # regex for @ followed by word characters
+		for mention in mentions:
+			u = User.find_by_username(mention[1:]) # splice out first character '@'
+			if u:
+				u.remove_mention(post)
 
 	@staticmethod
 	def find_by_id(id):

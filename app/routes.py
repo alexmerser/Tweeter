@@ -1,4 +1,4 @@
-#!flask/bin/python
+#!/usr/bin/env python
 from flask import Flask, render_template, session, redirect, url_for, escape, request, abort
 import functools
 app = Flask(__name__)
@@ -11,7 +11,7 @@ from models import User,Post,Timeline
 
 reserved_usernames = 'follow mentions home signup login logout post'
 
-app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+app.secret_key = 'ABCDEFA0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
 def authenticate(handler):
 	@functools.wraps(handler)
@@ -88,6 +88,17 @@ def status(name, id):
 			return render_template('single.html', header='page', username=post.user.username, tweet=post, page='single.html', logged=user_is_logged())
 
 	abort(404)
+
+
+@app.route('/delete/<id>', methods=['POST'])
+@authenticate
+def delete(user, id):
+	post = Post.find_by_id(id)
+	if post:
+		Post.delete(user,id)
+		return redirect('/home')
+	else:
+		abort(404)
 
 
 @app.route('/post', methods=['POST'])

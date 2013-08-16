@@ -1,5 +1,5 @@
 #!/usr/bin python
-from flask import Flask, render_template, session, redirect, url_for, escape, request, abort
+from flask import Flask, render_template, session, redirect, url_for, escape, request, abort, flash
 import functools
 import pdb
 app = Flask(__name__)
@@ -51,14 +51,24 @@ def home(user):
 		last_tweet = user.posts()[0]
 	else:
 		last_tweet = None
-	return render_template('timeline.html', header='page', timeline=user.timeline(), page='timeline.html', username=user.username, counts=counts, tweet=last_tweet, logged=True)
+	logged_user = logged_in_user()
+	if logged_user:
+		himself = logged_user.username == user.username
+	else:
+		himself = False
+	return render_template('timeline.html', himself=himself, header='page', timeline=user.timeline(), page='timeline.html', username=user.username, counts=counts, tweet=last_tweet, logged=True, user=user)
 
 
 @app.route('/mentions')
 @authenticate
 def mentions(user):
 	counts = user.followees_count, user.followers_count, user.tweet_count
-	return render_template('mentions.html', header='page', mentions=user.mentions(), page='mentions.html', username=user.username, counts=counts, posts=user.posts()[:1],logged=True)
+	logged_user = logged_in_user()
+	if logged_user:
+		himself = logged_user.username == name
+	else:
+		himself = False
+	return render_template('mentions.html', himself=himself, user=user, header='page', mentions=user.mentions(), page='mentions.html', username=user.username, counts=counts, posts=user.posts()[:1],logged=True)
 
 
 @app.route('/<name>', methods=['GET', 'POST'])
@@ -75,7 +85,7 @@ def user_page(name):
 		if logged_user:
 			is_following = logged_user.following(user)
 
-		return render_template('user.html', header='page', posts=user.posts(), counts=counts, page='user.html', username=user.username, logged=is_logged, is_following=is_following, himself=himself)
+		return render_template('user.html', user=user, header='page', posts=user.posts(), counts=counts, page='user.html', username=user.username, logged=is_logged, is_following=is_following, himself=himself)
 
 	else:
 		abort(404)
@@ -138,7 +148,11 @@ def login():
                         if user and user.password == settings.SALT + password:
                                 session['id'] = user.id
                                 return redirect('/home')
-
+                        else:
+                        		flash('Incorrect username or password', 'error')
+                        		return render_template('login.html', header='page', page='login.html', error_login=True, error_signup=False, logged=False)
+              					
+              	flash('Please enter valid information', 'error')                
                 return render_template('login.html', header='page', page='login.html', error_login=True, error_signup=False, logged=False)
 	else:
 		if user_is_logged():
@@ -157,11 +171,12 @@ def logout():
 @app.route('/signup', methods=['POST', 'GET'])
 def sign_up():
 	if request.method == 'POST':
-		if 'name' in request.form and 'password' in request.form:
+		if 'name' in request.form and 'password' in request.form and 'email' in request.form:
 			name = request.form['name']
 			if name not in reserved_usernames.split():
 				password = request.form['password']
-				user = User.create(name, password)
+				email = request.form['email']
+				user = User.create(name, password, email)
 				if user:
 					session['id'] = user.id
 					return redirect('/home')

@@ -103,21 +103,21 @@
 		
 		{% block side %}
 		<div class="span4 well">
-			<div id="side">
+			
 				<p class="bio">
-					<img src="/static/avatar-small.png" />{{username}} 
-					<span><a href="/{{username}}">{{counts[2]}} tweets</a></span>
+					  {{username}} 
 				</p>
-			<div>
-				<ul class="follow">
-					<li><a href="#">Following: <span>{{counts[0]}}</span></a></li>
-					<li><a href="#">Followers: <span>{{counts[1]}}</span></a></li>
-					<li><a href="/mentions">@{{username}}</a></li>
-				</ul>
-			</div>
-		</div> <!-- span 4 -->	
-		</div> <!-- span 12 -->
-		</div> <!-- fluid rows -->
+			
+        <div class="row-fluid">
+              <div class="span6">
+                  Tweets: {{counts[2]}}<br>	
+            			Following: {{counts[0]}}<br>
+            			Followers: {{counts[1]}}<br>
+            			Mentions: <a href="/mentions">@{{username}}</a><br>
+        			</div>
+        <div class="span6"><img src="{{user.avatar(128)}}" /></div>
+        </div>
+		</div> 
 		{% endblock %}
 		
 

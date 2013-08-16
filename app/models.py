@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin python
 import redis
 import re
 import settings
+from hashlib import md5
 
 r = settings.r
 
@@ -58,11 +59,13 @@ class User(Model):
 			return None
 
 	@staticmethod
-	def create(username, password):
+	def create(username, password, email):
 		user_id = r.incr("user:uid")
-		if not r.get("user:username:%s" % username):
+		if not r.get("user:username:%s" % username) and not r.get("user:username:%s" % email):
 			r.set("user:id:%s:username" % user_id, username)
 			r.set("user:username:%s" % username, user_id)
+			r.set("user:id:%s:email" % user_id, email)
+			r.set("user:email:%s" % email, user_id)
 
 			# Fake salt
 			salt = settings.SALT
@@ -70,6 +73,8 @@ class User(Model):
 			r.lpush("users", user_id)
 			return User(user_id)
 		return None
+
+
 
 	def posts(self, page=1):
 		_from, _to = (page-1)*10, page*10
@@ -143,9 +148,7 @@ class User(Model):
 		if followees:
 			return [Iser(int(user_id)) for user_id in followees]
 		return []
-
 	
-
 	@property
 	def tweet_count(self):
 		return r.llen("user:id:%s:posts" % self.id) or 0
@@ -163,6 +166,9 @@ class User(Model):
 	
 	def remove_follower(self, user):
 		r.srem("user:id:%s:followers" % self.id, user.id)
+
+	def avatar(self, size):
+		return 'http://www.gravatar.com/avatar/' + md5(r.get("user:id:%s:email" % self.id)).hexdigest() + '?d=mm&s=' + str(size)
 
 
 class Post(Model):

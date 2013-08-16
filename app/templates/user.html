@@ -8,19 +8,23 @@
 
 {% block content %}
 	
-	<div id="main">
+	<div class="well well-large">
 	{% if logged and not himself %}
 		{% if is_following %}
 			<form action="/unfollow/{{username}}" method="post" accept-charset="utf-8" class="unfollow-user">
-				<p><input type="submit" value="Unfollow {{username}}"></p>
+				<p><input type="submit" class="btn btn-danger" value="Unfollow {{username}}"></p>
 			</form>
 		{% else %}
 			<form action="/follow/{{username}}" method="post" accept-charset="utf-8" class="follow-user">
-				<p><input type="submit" value="Follow {{username}}"></p>
+				<p><input type="submit" class="btn btn-success" value="Follow {{username}}"></p>
 			</form>
 		{% endif %}
 	{% endif %}
+	</div>
 
+	<div class="row-fluid"> <!-- contains mentions and side -->
+			<div class="span12">
+				<div class="span8">	
 	<div class="tweets">
 	{% if posts %}
 		{% for tweet in posts %}

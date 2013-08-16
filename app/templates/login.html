@@ -7,7 +7,7 @@
 {% block form %}{% endblock %}
 
 {% block content %}
-
+  <br>
 	<div class="container">
 		<div class="row-fluid">
 		<div class="span12">
@@ -33,7 +33,7 @@
     	
 		<div class="span6">
 	 	<div class="area">
-                <form class="form-signin" method="POST" action="/login">
+                <form class="form-signin" method="POST" action="/signup">
                          <h2 class="form-signin-heading">Sign up</h2>
                         	<input type="text" name="name" class="input-block-level" placeholder="Username">
 				{% if error_signup %}

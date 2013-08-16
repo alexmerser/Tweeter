@@ -88,6 +88,7 @@
 		{% endblock %}
 		
 		{% block form %}
+      <br>
 			<div class="well well-large">
 				<form method="POST" action="/post" class="update">
 					<textarea class="input-block-level" name="content" placeholder="What's happening?" rows="5"></textarea>
@@ -104,7 +105,7 @@
 		<div class="span4 well">
 			<div id="side">
 				<p class="bio">
-					<img src="/static/avatar-small.png" />{{username}}
+					<img src="/static/avatar-small.png" />{{username}} 
 					<span><a href="/{{username}}">{{counts[2]}} tweets</a></span>
 				</p>
 			<div>

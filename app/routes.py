@@ -1,6 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin python
 from flask import Flask, render_template, session, redirect, url_for, escape, request, abort
 import functools
+import pdb
 app = Flask(__name__)
 
 import redis
@@ -155,7 +156,7 @@ def logout():
 
 @app.route('/signup', methods=['POST', 'GET'])
 def sign_up():
-	if request.method == 'POST':	
+	if request.method == 'POST':
 		if 'name' in request.form and 'password' in request.form:
 			name = request.form['name']
 			if name not in reserved_usernames.split():
@@ -167,9 +168,10 @@ def sign_up():
 				return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=True, logged=False)
 	
 	else:
+		pdb.set_trace()
 		if user_is_logged():
-                        return redirect('/home')
-                return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=False, logged=False)
+			return redirect('/home')
+        return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=False, logged=False)
 
 @app.route('/static/<filename>')
 def static_file(filename):

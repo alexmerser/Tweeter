@@ -8,20 +8,7 @@
 
 {% block content %}
 	
-	{% if logged and not himself %}
-	<br>
-	<div class="well well-large">
-		{% if is_following %}
-			<form action="/unfollow/{{username}}" method="post" accept-charset="utf-8" class="unfollow-user">
-				<p><input type="submit" class="btn btn-danger" value="Unfollow {{username}}"></p>
-			</form>
-		{% else %}
-			<form action="/follow/{{username}}" method="post" accept-charset="utf-8" class="follow-user">
-				<p><input type="submit" class="btn btn-success" value="Follow {{username}}"></p>
-			</form>
-		{% endif %}
-	</div>
-	{% endif %}
+	
 	<br>
 	<div class="row-fluid"> <!-- contains mentions and side -->
 			<div class="span12">
@@ -30,27 +17,37 @@
 	{% if posts %}
 		{% for tweet in posts %}
 			<div class="row-fluid">
-					<div class="well">
+		<div class="well">
 			
-						<img src="{{tweet.user.avatar(48)}}" /> <strong> <a href="/{{tweet.user.username}}">{{tweet.user.username}}</a></strong>
-						 <br><br>
-						 <div class="well"> {{tweet.content}}</div>
-				
-					{% if logged and himself %}
-				 		<div class="container">
-				 
-							<form method="POST" action="/delete/{{tweet.id}}" class="delete">
-								<input type="submit" class="btn btn-danger"  value="Delete">
-							</form>
-					
-				<!-- <form method="GET" action="/{{tweet.user.username}}/statuses/{{tweet.id}}">
-				<input type="submit" class="btn"  value="Permalink">
-				</form>  -->
-						</div>
-					{% endif %}
+			
+			
+			<div class="well">
+				<div class="row-fluid">
+					 <div class="span2"><img src="{{user.avatar(64)}}" /> </div>
+					 <div class="span10"> 
+					 		<strong> <a href="/{{tweet.user.username}}">{{tweet.user.username}}</a></strong>
+					 		<br/>
+					 		{{tweet.content}}
 
-					</div> <!-- well -->
+					 </div>
+				</div>
 			</div>
+
+			{% if logged and himself %}
+			 <div class="row-fluid">
+			 	<div class="span1">
+					<form method="POST" action="/delete/{{tweet.id}}" class="delete">
+					<input type="submit" class="btn btn-danger"  value="Delete">
+					</form>
+				</div>
+			<!-- <form method="GET" action="/{{tweet.user.username}}/statuses/{{tweet.id}}">
+			<input type="submit" class="btn"  value="Permalink">
+			</form>  -->
+			</div>
+			{% endif %}
+
+		</div> <!-- well -->
+	</div>
 		{% endfor %}
 	{% else %}
 		<p>{{username}} has not posted any tweet yet</p>

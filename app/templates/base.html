@@ -113,7 +113,18 @@
                   Tweets: {{counts[2]}}<br>	
             			Following: {{counts[0]}}<br>
             			Followers: {{counts[1]}}<br>
-            			Mentions: <a href="/mentions">@{{username}}</a><br>
+            			Mentions: <a href="/mentions">@{{username}}</a><br><br>
+                  {% if logged and not himself %}    
+                      {% if is_following %}
+                        <form action="/unfollow/{{username}}" method="post" accept-charset="utf-8" class="unfollow-user">
+                          <p><input type="submit" class="btn btn-danger" value="Unfollow {{username}}"></p>
+                        </form>
+                      {% else %}
+                        <form action="/follow/{{username}}" method="post" accept-charset="utf-8" class="follow-user">
+                          <p><input type="submit" class="btn btn-success" value="Follow {{username}}"></p>
+                        </form>
+                      {% endif %}
+                  {% endif %}
         			</div>
         <div class="span6"><img src="{{user.avatar(128)}}" /></div>
         </div>

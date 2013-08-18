@@ -9,45 +9,52 @@
 {% endblock %}
 
 {% block content %}
-	<div class="row-fluid"> <!-- contains timeline and side -->
-	<div class="span12">
-		<div class="span8">	
-		<div class="tweets">
-	{% for tweet in timeline %}
-	<div class="row-fluid">
-		<div class="well">
+	<div class="row"> <!-- contains timeline and side -->
+	
+		<div class="col-md-8">	
+		
+			{% for tweet in timeline %}
 			
-			
-			
-			<div class="well">
-				<div class="row-fluid">
-					 <div class="span2"><img src="{{tweet.user.avatar(64)}}" /> </div>
-					 <div class="span10"> 
-					 		<strong> <a href="/{{tweet.user.username}}">{{tweet.user.username}}</a></strong>
-					 		<br/>
-					 		{{tweet.content}}
+				<div class="row"> <!-- individual tweet -->
+					<div class="well well-sm">						
+						<div class="row"> <!-- Picture, name, date -->
+							<div class="col-md-1" style="margin-top: +3px"> 	<!-- picture -->
+								<img src="{{tweet.user.avatar(32)}}" /> 
+							</div>
 
-					 </div>
+							<div class="col-md-3" style="margin-left: -25px; width: 25%" > <!-- name, date -->
+								<strong> <a style="color: #000000" href="/{{tweet.user.username}}">{{tweet.user.username}}</a></strong>
+								<br>
+								<p class="text-muted"><small>This is where the date goes</small></p>
+							</div>
+						</div>
+
+						<div class="row" style="margin-top: +3px; margin-bottom: +10px">  <!-- content row -->
+							<div class="col-md-12"> 
+						 		{{tweet.content}}
+							</div>
+						</div>
+						
+						<div class="row" style="margin-bottom: -15px">				
+					 		{% if logged and himself %} 
+							<div class="col-sm-1">
+								<form method="POST" action="/delete/{{tweet.id}}" class="delete">
+									<input type="submit" class="btn btn-danger btn-xs"  value="Delete">
+								</form>
+							</div>
+							{% endif %}
+							<div class="col-sm-1">
+								<form method="GET" action="/{{tweet.user.username}}/statuses/{{tweet.id}}" class="permalink">
+									<input type="submit" class="btn btn-success btn-xs"  value="Permalink">
+								</form>
+							</div>	
+						</div>
+
+					</div>  <!-- well -->
 				</div>
-			</div>
-
-			{% if logged and himself %}
-			 <div class="row-fluid">
-			 	<div class="span1">
-					<form method="POST" action="/delete/{{tweet.id}}" class="delete">
-					<input type="submit" class="btn btn-danger"  value="Delete">
-					</form>
-				</div>
-			<!-- <form method="GET" action="/{{tweet.user.username}}/statuses/{{tweet.id}}">
-			<input type="submit" class="btn"  value="Permalink">
-			</form>  -->
-			</div>
-			{% endif %}
-
-		</div> <!-- well -->
-	</div>
-	{% endfor %}
-	</div> <!-- tweets -->
+				
+		{% endfor %}
+	
 	</div> <!-- span 8 -->
 
 {% endblock %}

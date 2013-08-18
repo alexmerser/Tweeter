@@ -3,13 +3,14 @@
 
 		<title>Tweeter</title>
 	<!--	<link rel="stylesheet" href="/static/retwis-py.css" type="text/css" media="screen" /> -->
-		<link rel="stylesheet" href="/static/css/bootstrap.css">
+		<!-- <link rel="stylesheet" href="/static/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="/static/css/bootstrap3/dist/css/bootstrap.css">
 		<style>
       		body {
         		padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       		}
     		</style>
-		<link rel="stylesheet" href="/static/css/bootstrap-responsive.css">	
+		<!-- <link rel="stylesheet" href="/static/css/bootstrap-responsive.css">	-->
 
 		<style type="text/css">
       body {
@@ -43,6 +44,12 @@
         padding: 7px 9px;
       }
 
+      .avatar{border:1px solid #;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px; 
+      }
+
     </style>
 
 		<!-- Fav and touch icons -->
@@ -60,41 +67,51 @@
 		
 		{% block header %}
 			<div class="navbar navbar-inverse navbar-fixed-top">
-      				<div class="navbar-inner">
-        				<div class="container">
-          					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        			<div class="container">
+                <div class="navbar-header">
+          					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
            	 				<span class="icon-bar"></span>
             					<span class="icon-bar"></span>
             					<span class="icon-bar"></span>
           					</button>
-          					<a class="brand" href="/">Tweeter</a>
-          					<div class="nav-collapse collapse">
-            						<ul class="nav">
+          					<a class="navbar-brand" href="/">Tweeter</a>
+                </div>
+          			<div class="navbar-collapse collapse">
+            						<ul class="nav navbar-nav">
               						<li class="active"><a href="/">Home</a></li>
 							{% if logged %}
               							<li><a href="/logout">Sign Out</a></li>
 							{% else %}
               							<li><a href="/login">Sign in</a></li>
-								<li><a href="/login">Sign up</a></li>
+								            <li><a href="/login">Sign up</a></li>
 							{% endif %}
            	 					</ul>
-          					</div><!--/.nav-collapse -->
-        				</div>
-      				</div>
-    			</div>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search User">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                 </div>
+          			</div><!--/.navbar-collapse -->
+                  
+      </div>
+    			
 
-		<div class="container">
+		 <div class="container">
 
 		{% endblock %}
 		
 		{% block form %}
       <br>
-			<div class="well well-large">
+			
+      <div class="row" \>
 				<form method="POST" action="/post" class="update">
-					<textarea class="input-block-level" name="content" placeholder="What's happening?" rows="5"></textarea>
-						<input type="submit" class="btn btn-info"  value="Tweet!">
+					<textarea style="margin-bottom: -10px" class="form-control" name="content" placeholder="What's happening?" rows="4"></textarea>
+          <br>
+					<div class="form-group"><input type="submit" class="btn btn-info"  value="Tweet!"></div>
 				</form>
-			</div>
+			</div> 
 		{% endblock %}
 
 
@@ -102,44 +119,70 @@
 		
 		
 		{% block side %}
-		<div class="span4 well">
-			
-				<p class="bio">
-					  {{username}} 
-				</p>
-			
-        <div class="row-fluid">
-              <div class="span6">
-                  Tweets: {{counts[2]}}<br>	
-            			Following: {{counts[0]}}<br>
-            			Followers: {{counts[1]}}<br>
-            			Mentions: <a href="/mentions">@{{username}}</a><br><br>
-                  {% if logged and not himself %}    
-                      {% if is_following %}
-                        <form action="/unfollow/{{username}}" method="post" accept-charset="utf-8" class="unfollow-user">
-                          <p><input type="submit" class="btn btn-danger" value="Unfollow {{username}}"></p>
-                        </form>
-                      {% else %}
-                        <form action="/follow/{{username}}" method="post" accept-charset="utf-8" class="follow-user">
-                          <p><input type="submit" class="btn btn-success" value="Follow {{username}}"></p>
-                        </form>
-                      {% endif %}
-                  {% endif %}
-        			</div>
-        <div class="span6"><img src="{{user.avatar(128)}}" /></div>
-        </div>
-		</div> 
+		<div class="col-md-4">
+        <div class="well well-sm">
+    			
+            <div class="row" style="margin-bottom: +5px"> <!-- Picture, name, date -->
+              <div class="col-md-1" style="margin-top: +3px">   <!-- picture -->
+                <img src="{{user.avatar(32)}}" /> 
+              </div>
+
+              <div class="col-md-6" style="margin-left: +10px; margin-top: +5px"  > <!-- name, date -->
+                <strong> <a style="color: #000000" href="/{{user.username}}">{{user.username}}</a></strong>
+              </div>
+            </div>
+
+    			
+            <div class="row" style="margin-bottom: -10px; margin-top: +5px">
+                     <div class="col-md-3" style="border-top: 2px solid #eee; border-left: 2px solid #eee"> 
+                          <p style="margin-top: +10px; margin-bottom: 0px"><b>{{counts[2]}}</b><br></p>
+                          <small><p class="text-muted">TWEETS</p></small>
+                     </div>
+                     <div class="col-md-3" style="border-top: 2px solid #eee; border-left: 2px solid #eee"> 
+                          <p style="margin-top: +10px; margin-bottom: 0px"><b>{{counts[0]}}</b><br></p>
+                          <small><p class="text-muted">FOLLOWING</p></small>
+                     </div>
+                		 <div class="col-md-3" style="border-top: 2px solid #eee; border-left: 2px solid #eee"> 
+                          <p style="margin-top: +10px; margin-bottom: 0px"><b>{{counts[1]}}</b><br></p>
+                          <small><p class="text-muted">FOLLOWERS</p></small>
+                     </div>	
+                		 <div class="col-md-3" style="border-top: 2px solid #eee; border-left: 2px solid #eee"> 
+                          <p style="margin-top: +10px; margin-bottom: 0px"><b><a href="/mentions">@{{username}}</a></b><br></p>
+                          <small><p class="text-muted">MENTIONS</p></small>
+                     </div>
+            </div>  
+            {% if logged and not himself %} 
+            <div class="row" style="border-top: 2px solid #eee">  
+                <div align="center" class="col-md-12" style="margin-bottom: -10px">  
+                {% if is_following %}
+                  <form action="/unfollow/{{username}}" method="post" accept-charset="utf-8" class="unfollow-user">
+                    <p><input type="submit" class="btn btn-danger" value="Unfollow {{username}}"></p>
+                  </form>
+                {% else %}
+                  <form action="/follow/{{username}}" method="post" accept-charset="utf-8" class="follow-user">
+                    <p><input type="submit" class="btn btn-success" value="Follow {{username}}"></p>
+                  </form>
+                {% endif %}
+                </div>
+                </div>
+            {% endif %}
+            
+            
+            </div>
+    		</div> 
+    
+    </div> <!-- row from timeline -->
 		{% endblock %}
 		
 
 		 
 		{% block footer %}
-			</div>
+			
 			<script src="/static/app.js" type="text/javascript" charset="utf-8"></script>
 		{% endblock %} 
 		
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.js"></script>
+   <!-- <script src="/static/js/bootstrap.js"></script>
     <script src="/static/js/bootstrap-transition.js"></script>
     <script src="/static/js/bootstrap-alert.js"></script>
     <script src="/static/js/bootstrap-modal.js"></script>
@@ -151,7 +194,9 @@
     <script src="/static/js/bootstrap-button.js"></script>
     <script src="/static/js/bootstrap-collapse.js"></script>
     <script src="/static/js/bootstrap-carousel.js"></script>
-    <script src="/static/js/bootstrap-typeahead.js"></script>
+    <script src="/static/js/bootstrap-typeahead.js"></script> -->
+    <script src="/static/css/bootstrap3/dist/js/bootstrap.js"></script>
+    <script src="/static/css/bootstrap3/assets/js/respond.min.js"></script>
 	</body>
 
 </html>

@@ -65,7 +65,7 @@ def mentions(user):
 	counts = user.followees_count, user.followers_count, user.tweet_count
 	logged_user = logged_in_user()
 	if logged_user:
-		himself = logged_user.username == name
+		himself = logged_user.username == user.username
 	else:
 		himself = False
 	return render_template('mentions.html', himself=himself, user=user, header='page', mentions=user.mentions(), page='mentions.html', username=user.username, counts=counts, posts=user.posts()[:1],logged=True)

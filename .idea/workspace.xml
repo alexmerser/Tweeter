@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d34c4d1a-99b9-4fa5-a298-0203901c16e4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/.Python" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/activate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/activate.csh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/activate.fish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/activate_this.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/easy_install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/easy_install-2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/pip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/pip-2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/python" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/python2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/bin/python2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/include/python2.7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/UserDict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/_abcoll.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/_weakrefset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/abc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/codecs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/copy_reg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/distutils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/distutils/distutils.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/encodings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/fnmatch.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/genericpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/lib-dynload" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/linecache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/locale.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/no-global-site-packages.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/ntpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/orig-prefix.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/os.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/posixpath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/re.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Flask-0.9-py2.7.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Flask-0.9-py2.7.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Flask-0.9-py2.7.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Flask-0.9-py2.7.egg-info/installed-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Flask-0.9-py2.7.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Flask-0.9-py2.7.egg-info/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Flask-0.9-py2.7.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Jinja2-2.7-py2.7.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Jinja2-2.7-py2.7.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Jinja2-2.7-py2.7.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Jinja2-2.7-py2.7.egg-info/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Jinja2-2.7-py2.7.egg-info/installed-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Jinja2-2.7-py2.7.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Jinja2-2.7-py2.7.egg-info/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Jinja2-2.7-py2.7.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/MarkupSafe-0.18-py2.7.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/MarkupSafe-0.18-py2.7.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/MarkupSafe-0.18-py2.7.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/MarkupSafe-0.18-py2.7.egg-info/installed-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/MarkupSafe-0.18-py2.7.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/MarkupSafe-0.18-py2.7.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Werkzeug-0.9.1-py2.7.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Werkzeug-0.9.1-py2.7.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Werkzeug-0.9.1-py2.7.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Werkzeug-0.9.1-py2.7.egg-info/installed-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Werkzeug-0.9.1-py2.7.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/Werkzeug-0.9.1-py2.7.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/easy-install.pth" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/blueprints.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/ctx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/debughelpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/ext/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/exthook.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/globals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/logging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/module.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/session.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/templating.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/appctx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/basic.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/blueprints.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/deprecations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/examples.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/static/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/subclassing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/templates/_macro.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/templates/context_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/templates/escaping_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/templates/mail.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/templates/nested/nested.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/templates/simple_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/templates/template_filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/templating.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/static/css/test.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/static/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/templates/admin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/frontend/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/frontend/templates/frontend/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/config_module_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/config_package_app/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_broken/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_broken/b.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_package/submodule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_simple.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_package/submodule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_simple.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/importerror.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/SiteEgg.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/site_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/site_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/main_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/static/css/test.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/static/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/frontend/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/frontend/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/path/installed_package/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/subdomaintestmodule/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/test_apps/subdomaintestmodule/static/hello.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/testsuite/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/flask/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/_stringdefs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/bccache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/compiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/debug.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/defaults.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/environment.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/filters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/lexer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/loaders.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/meta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/nodes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/optimizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/runtime.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/sandbox.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/core_tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/debug.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/doctests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/filters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/imports.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/inheritance.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/lexnparse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/loader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/res/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/res/templates/broken.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/res/templates/foo/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/res/templates/syntaxerror.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/res/templates/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/security.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/testsuite/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/jinja2/visitor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/markupsafe/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/markupsafe/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/markupsafe/_constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/markupsafe/_native.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/markupsafe/_speedups.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/markupsafe/_speedups.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/markupsafe/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/EGG-INFO/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/EGG-INFO/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/EGG-INFO/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/EGG-INFO/entry_points.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/EGG-INFO/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/EGG-INFO/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/EGG-INFO/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/backwardcompat/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/backwardcompat/socket_create_connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/backwardcompat/ssl_match_hostname.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/basecommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/baseparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/cacert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/cmdoptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/bundle.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/completion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/freeze.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/help.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/search.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/show.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/uninstall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/unzip.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/commands/zip.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/locations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/log.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/req.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/runner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/vcs/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/vcs/bazaar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/vcs/git.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/vcs/mercurial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/pip-1.3.1-py2.7.egg/pip/vcs/subversion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis-2.7.6-py2.7.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis-2.7.6-py2.7.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis-2.7.6-py2.7.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis-2.7.6-py2.7.egg-info/installed-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis-2.7.6-py2.7.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis/client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/redis/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/setuptools-0.6c11-py2.7.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/setuptools-0.9.5-py2.7.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/setuptools-0.9.6-py2.7.egg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/setuptools.pth" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/_internal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/atom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/fixers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/iterio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/jsrouting.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/limiter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/lint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/profiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/securecookie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/testtools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/contrib/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/datastructures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/console.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/repr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/FONT_LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/console.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/debugger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/less.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/source.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/shared/ubuntu.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/debug/tbtools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/formparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/http.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/local.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/posixemulation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/routing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/script.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/security.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/serving.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testapp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/contrib/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/contrib/fixers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/contrib/iterio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/contrib/securecookie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/contrib/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/contrib/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/datastructures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/debug.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/formparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/http.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/internal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/local.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/collect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/firefox3-2png1txt/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/firefox3-2png1txt/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/firefox3-2png1txt/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/firefox3-2png1txt/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/firefox3-2pnglongtext/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/firefox3-2pnglongtext/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/firefox3-2pnglongtext/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/firefox3-2pnglongtext/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/ie6-2png1txt/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/ie6-2png1txt/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/ie6-2png1txt/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/ie6-2png1txt/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/ie7_full_path_request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/opera8-2png1txt/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/opera8-2png1txt/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/opera8-2png1txt/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/opera8-2png1txt/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/webkit3-2png1txt/file1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/webkit3-2png1txt/file2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/webkit3-2png1txt/request.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/multipart/webkit3-2png1txt/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/res/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/routing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/security.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/serving.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/testsuite/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/useragents.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/wrappers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site-packages/werkzeug/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/site.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/sre.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/sre_compile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/sre_constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/sre_parse.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/stat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/types.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/lib/python2.7/warnings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/local/bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/local/include" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/flask/local/lib" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/base.html" afterPath="$PROJECT_DIR$/app/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/timeline.html" afterPath="$PROJECT_DIR$/app/templates/timeline.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/user.html" afterPath="$PROJECT_DIR$/app/templates/user.html" />
+    </list>
+    <ignored path="Tweeter.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="d34c4d1a-99b9-4fa5-a298-0203901c16e4" time="1376750926197" ignored="false" />
+    <file path="/user.html" changelist="d34c4d1a-99b9-4fa5-a298-0203901c16e4" time="1376751759072" ignored="false" />
+    <file path="/timeline.html" changelist="d34c4d1a-99b9-4fa5-a298-0203901c16e4" time="1376751778235" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Tweeter" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="routes.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timeline.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/timeline.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="19" selection-start="144" selection-end="144" vertical-scroll-proportion="0.19946809">
+              <folding>
+                <element signature="n#style#0;n#a#0;n#strong#0;n#u#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="45" selection-start="558" selection-end="558" vertical-scroll-proportion="-15.625">
+              <folding>
+                <element signature="n#style#0;n#a#0;n#strong#0;n#u#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/templates/user.html" />
+        <option value="$PROJECT_DIR$/app/templates/timeline.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tweeter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tweeter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tweeter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tweeter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tweeter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tweeter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tweeter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RunManager">
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d34c4d1a-99b9-4fa5-a298-0203901c16e4" name="Default" comment="" />
+      <created>1376750922386</created>
+      <updated>1376750922386</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14634146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="45" selection-start="558" selection-end="558" vertical-scroll-proportion="-15.625">
+          <folding>
+            <element signature="n#style#0;n#a#0;n#strong#0;n#u#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/timeline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="19" selection-start="144" selection-end="144" vertical-scroll-proportion="0.19946809">
+          <folding>
+            <element signature="n#style#0;n#a#0;n#strong#0;n#u#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

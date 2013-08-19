@@ -135,12 +135,12 @@ def unfollow(user, name):
 		user.stop_following(user_to_unfollow)
 	return redirect('/%s' % name)
 
-@app.route('/search', methods=['POST', 'GET'])
+@app.route('/search', methods=['POST'])
 def search():
 	name = request.form['searchVal']
 	return redirect('/%s' % name)
 
-@app.route('/login', methods=['POST', 'GET'])
+@app.route('/login', methods=['POST'])
 def login():
 	if request.method == 'POST':
                 if 'name' in request.form and 'password' in request.form:
@@ -157,10 +157,7 @@ def login():
               					
               	flash('Please enter valid information', 'error')                
                 return render_template('login.html', header='page', page='login.html', error_login=True, error_signup=False, logged=False)
-	else:
-		if user_is_logged():
-			return redirect('/home')
-		return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=False, logged=False)
+	
 
 
 
@@ -171,7 +168,7 @@ def logout():
 	return redirect('/')
 
 
-@app.route('/signup', methods=['POST', 'GET'])
+@app.route('/signup', methods=['POST'])
 def sign_up():
 	if request.method == 'POST':
 		if 'name' in request.form and 'password' in request.form and 'email' in request.form:
@@ -185,11 +182,7 @@ def sign_up():
 					return redirect('/home')
 				return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=True, logged=False)
 	
-	else:
-		pdb.set_trace()
-		if user_is_logged():
-			return redirect('/home')
-        return render_template('login.html', header='page', page='login.html', error_login=False, error_signup=False, logged=False)
+	
 
 @app.route('/static/<filename>')
 def static_file(filename):

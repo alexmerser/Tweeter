@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 import redis
 import settings
-import engine
 
 settings.r = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
 from models import User,Post,Timeline
@@ -136,7 +135,10 @@ def unfollow(user, name):
 		user.stop_following(user_to_unfollow)
 	return redirect('/%s' % name)
 
-
+@app.route('/search', methods=['POST', 'GET'])
+def search():
+	name = request.form['searchVal']
+	return redirect('/%s' % name)
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():

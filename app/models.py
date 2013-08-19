@@ -3,7 +3,6 @@ import redis
 import re
 import settings
 from hashlib import md5
-import engine
 
 r = settings.r
 
